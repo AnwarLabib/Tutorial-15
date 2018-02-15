@@ -15,8 +15,6 @@ Peter Agayby -> How you doin?
 
 ## Authors
 
-* **Zeyad Zaky** - ID: 37-0521
-* **Anwar Labib** - ID:37-4549
 * **Abdelrahman Tarek** - ID:37-8080 (Branch)
 * **Ahmed Samir Morsy** - ID:37-11869
 * **Peter Agayby** - ID: 37-715
