@@ -10,4 +10,5 @@ Anwar Labib -> Lives to code
 
 ## Authors
 
+* **Zeyad Zaky** - ID: 37-0521
 * **Anwar Labib** - ID:37-4549
