@@ -10,6 +10,8 @@ Anwar Labib -> Lives to code
 
 Fady Sameh -> Football, coding
 
+Doaa Samer -> Loves food!
+
 ## Authors
 
 * **Zeyad Zaky** - ID: 37-0521
