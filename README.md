@@ -10,6 +10,8 @@ Bishoy Farid --> Books, Coding
 
 Marwan Sami Youssef --> Music
 
+Amr Saadi -> Gaming
+
 ## Authors
 
 -- Omar Elmoghazy - ID: 37-4185
@@ -17,3 +19,5 @@ Marwan Sami Youssef --> Music
 -- Bishoy Farid - ID: 37-8584
 
 -- Marwan Sami Youssef - ID: 37-1445
+
+-- Amr Saadi - ID: 37-3444
