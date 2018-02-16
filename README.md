@@ -8,8 +8,12 @@ Omar Elmoghazy -> P.T. Barnum
 
 Bishoy Farid --> Books, Coding
 
+Marwan Sami Youssef --> Music
+
 ## Authors
 
 -- Omar Elmoghazy - ID: 37-4185
 
 -- Bishoy Farid - ID: 37-8584
+
+-- Marwan Sami Youssef - ID: 37-1445
