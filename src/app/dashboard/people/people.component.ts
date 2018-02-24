@@ -38,7 +38,7 @@ export class PeopleComponent implements OnInit {
       {
           name: 'AHMED Samir Morsy',
           about: 'Fifa(PS4) , gaming ,Unity',
-          imagePath: 'assets/T15-logo.png'
+          imagePath: 'assets/morsy.jpg'
       },
       {
           name: 'Peter Agayby',
