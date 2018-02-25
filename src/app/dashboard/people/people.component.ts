@@ -73,7 +73,7 @@ export class PeopleComponent implements OnInit {
       {
           name: 'Mostafa Amer',
           about: 'Canada ❤️',
-          imagePath: 'assets/T15-logo.png'
+          imagePath: 'assets/Sasa.jpg'
       },
       {
           name: 'Shadi Barghash',
