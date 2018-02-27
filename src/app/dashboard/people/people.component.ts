@@ -43,7 +43,7 @@ export class PeopleComponent implements OnInit {
       {
           name: 'Peter Agayby',
           about: 'How you doin?',
-          imagePath: 'assets/T15-logo.png'
+          imagePath: 'assets/Peter.jpg'
       },
       {
           name: 'Maggie Ezzat',
