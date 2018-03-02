@@ -33,7 +33,7 @@ export class PeopleComponent implements OnInit {
       {
           name: 'Bishoy Farid',
           about: 'Books, Coding',
-          imagePath: 'assets/T15-logo.png'
+          imagePath: 'assets/bisho.JPG'
       },
       {
           name: 'AHMED Samir Morsy',
@@ -125,6 +125,11 @@ export class PeopleComponent implements OnInit {
           about: 'se project',
           imagePath: 'assets/T15-logo.png'
       },
+      {
+          name: 'Abdelrahmen Ayman',
+          about: 'Code, Eat Pizza, Watch Football',
+          imagePath: 'assets/abdelrahmen.jpg'
+      }
   ];
 
   constructor() { }
