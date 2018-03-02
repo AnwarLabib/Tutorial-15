@@ -5,8 +5,7 @@ import { ProductsService } from './products.service';
 
 @Component({
   selector: 'app-dashboard-items',
-  templateUrl: './items.component.html',
-  providers: [ProductsService]
+  templateUrl: './items.component.html'
 })
 
 export class ItemsComponent implements OnInit  {
