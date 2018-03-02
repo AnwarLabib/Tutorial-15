@@ -1,7 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { Product } from "./product.model"
 
 @Component({
   selector: 'app-dashboard-items',
-  template: ``
+  templateUrl: './items.component.html'
 })
-export class ItemsComponent {}
+export class ItemsComponent implements OnInit  {
+
+  products: Product[] = [
+
+    new Product('Ahaha Piano', 14000, 'Shadi Barghash'),
+    new Product('Music Player', 500, 'Shadi Barghash')
+
+  ];
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
