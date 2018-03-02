@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
-import { Product } from "./product.model"
+import { Product } from "./product.model";
+import { ProductsService } from './products.service';
 
 @Component({
   selector: 'app-dashboard-items',
-  templateUrl: './items.component.html'
+  templateUrl: './items.component.html',
+  providers: [ProductsService]
 })
 export class ItemsComponent implements OnInit  {
 
@@ -15,9 +17,14 @@ export class ItemsComponent implements OnInit  {
 
   ];
 
-  constructor() { }
+  constructor(private prodService : ProductsService) {}
 
   ngOnInit() {
+    this.retreiveAllProducts();
+  }
+
+  retreiveAllProducts() : void {
+    this.prodService.getAllProducts().then((prods : Product[]) => this.products = prods)
   }
 
 }
