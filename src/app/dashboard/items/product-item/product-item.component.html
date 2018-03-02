@@ -2,15 +2,11 @@
   <div>
 
     <div class="float-left">
-      <h4> {{product.name}}</h4>
-      <p> {{product.price}} </p>
-      <p> {{product.sellerName}} </p>
+      <h4>{{ product.name }}</h4>
+      <p>{{ product.price | currency }}</p>
+      <p>By: <strong>{{product.sellerName}}</strong></p>
+      <p>Created on: {{ product.createdAt | date }}</p>
     </div>
-
-    <!-- div class="float-right"> 
-      <img class="img-responsive" src="{{person.imagePath}}"
-      alt="picture" style="max-height: 100px;">
-    </div> -->
 
   </div>
 </nb-card>

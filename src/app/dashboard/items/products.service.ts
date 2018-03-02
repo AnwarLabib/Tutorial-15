@@ -24,4 +24,6 @@ export class ProductsService {
 
     deleteProduct(product : Product, user) {}
 
+    editProduct(product : Product, user) {}
+
 }

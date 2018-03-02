@@ -1,7 +1,10 @@
 export class Product {
 
-    constructor(public name: string, public price: Number, public sellerName: string) {}
+  updatedAt: Date;
 
-    // public createdAt: Date, public updatedAt: Date
-    // boolean inMyCart = false;
-  }
+  //inMyCart: boolean;
+  
+  constructor(public name: string, public price: Number, public sellerName: string,
+    public id? : string, public createdAt? : Date) {}
+
+}
