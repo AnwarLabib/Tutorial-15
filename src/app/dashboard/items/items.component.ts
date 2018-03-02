@@ -8,13 +8,12 @@ import { ProductsService } from './products.service';
   templateUrl: './items.component.html',
   providers: [ProductsService]
 })
+
 export class ItemsComponent implements OnInit  {
 
   products: Product[] = [
-
     new Product('Ahaha Piano', 14000, 'Shadi Barghash'),
     new Product('Music Player', 500, 'Shadi Barghash')
-
   ];
 
   constructor(private prodService : ProductsService) {}
