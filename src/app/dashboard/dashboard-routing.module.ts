@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent } from './dashboard.component';
 import { LoginComponent } from './login/login.component';
+import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 
 const routes: Routes = [
   {
@@ -15,13 +16,20 @@ const routes: Routes = [
       },
       {
         path: 'items',
-        loadChildren: './items/items.module#ItemsModule'
+        loadChildren: './items/items.module#ItemsModule'      
+      },
+      {
+        path:'allitems',
+        loadChildren : './allitems/allitems.module#AllItemsModule'
       },
       {
         path : 'login' , loadChildren : './login/login.module#LoginModule'
       },
       {
         path : 'register' , loadChildren : './register/register.module#RegisterModule'
+      },
+      {
+        path : 'shopping-cart' , loadChildren : './cart/cart.module#CartModule'
       }
 
     ]

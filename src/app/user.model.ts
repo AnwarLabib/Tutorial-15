@@ -1,9 +1,10 @@
 export class User{
-    public username: String
-    public password: String
-    public token: String;
+    public _id:string;
+    public username: string
+    public password: string
+    public token: string;
 
-  constructor(username:String,password:String)
+  constructor(username:string,password:string)
   {
     this.username = username;
     this.password = password;

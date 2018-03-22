@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
-import { Item } from "./item.model";
-import { ItemsService } from './items.service';
+import { AllItemsService } from './allitems.service';
 import { AsyncPipe } from '@angular/common';
 import { Observable } from 'rxjs/Rx';
 import { UserService } from '../../user.service';
 import { User } from '../../user.model';
+import { Item } from '../items/item.model';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-dashboard-items',
-  templateUrl: './items.component.html'
+  selector: 'app-dashboard-allitems',
+  templateUrl: './allitems.component.html'
 })
-export class ItemsComponent {
+export class AllItemsComponent {
 
   filteredStatus = '';
   items : Observable<Item[]>;
@@ -19,23 +20,29 @@ export class ItemsComponent {
   price;
   added = false;
   user:any = false;
-  constructor(private itemService: ItemsService,private userService:UserService){}
+  constructor(private itemService: AllItemsService,private userService:UserService,private router:Router){}
   
 
   ngOnInit(){
-    //this.itemService.getItems();
-    if(this.userService.user!=null){
+    if(this.userService.user)
+    {
       this.user = true;
-
+      
     }
-
+    
+      this.itemService.getItems();
       this.items = Observable.of(this.itemService.items);
-    this.itemService.itemSubject.subscribe(
-      (items: Item[]) =>{
-        this.items = Observable.of(items);
-      }
-    );
-  }
+      this.itemService.itemSubject.subscribe(
+        (items: Item[]) =>{
+          this.items = Observable.of(items);
+        }
+      );
+    }
+    // else{
+    //   this.router.navigate(['..']);
+    // }
+
+  
 
   onAdd(){
     this.addMode = true;

@@ -8,6 +8,9 @@ import { ThemeModule } from './@theme/theme.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { ItemsService } from './dashboard/items/items.service';
+import { UserService } from './user.service';
+import { AllItemsService } from './dashboard/allitems/allitems.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +22,6 @@ import { AppComponent } from './app.component';
     AppRoutingModule
   ],
   bootstrap: [AppComponent],
-  providers: [{ provide: APP_BASE_HREF, useValue: '/' }]
+  providers: [{ provide: APP_BASE_HREF, useValue: '/' },ItemsService,UserService,AllItemsService]
 })
 export class AppModule {}
